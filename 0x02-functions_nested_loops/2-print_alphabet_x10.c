@@ -1,25 +1,6 @@
 #include "main.h"
 void print_alphabet_x10(void);
 /**
- * main - Entry point
- * Description: A program that uses function
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	print_alphabet_x10();
-	return (0);
-}
-/**
  * print_alphabet_x10 - prints alphabets in lower case
  *
  * Description: prints alphabet in lower case
@@ -29,10 +10,14 @@ int main(void)
 void print_alphabet_x10(void)
 {
 	char i;
+	int h;
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (h = 0; h <= 9; h++)
+	{
+		for (i = 'a'; i <= 'z'; i++)
 	{
 		_putchar(i);
 	}
-	_putchar('\n');
+		_putchar('\n');
+	}
 }
