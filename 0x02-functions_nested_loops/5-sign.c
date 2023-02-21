@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * op_add - Makes the sum of two numbers
- * @n: value to be keyed
+ * print_sign- Makes the sum of two numbers
+ * @n: input argument
  *
- * Description: This is a longer description.
- * Returns signs plus value
+ * Description: A function that prints and returns values
+ *prints signs and return values
  * Return: The sum of the two parameters
  */
 int print_sign(int n)
