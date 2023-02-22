@@ -1,4 +1,5 @@
-include "main.h"
+#include "main.h"
+void print_muliples(int start, int end, int step);
 /**
  * times_table - function that computes the multiples
  *       value of 9
@@ -7,24 +8,50 @@ include "main.h"
 */
 void times_table(void)
 {
-	int n, mult, result;
+	int j;
 
-	for (n = 0; n <= 9; n++)
+	for (j = 0; j < 10; j++)
 	{
-		_putchar(48);
-		for (multiple = 1; multiple <= 9; ++multiple)
+		if (j == 9)
 		{
-			_putchar(',');
-			_putchar(' ');
-
-			result = num * multiple
-			if (result <= 9)
-				_putchar(' ');
-			else
-				_putchar((result / 10) + 48);
-
-			_putchar((prod % 10) + 48);
+			printf("0\n");
 		}
-		_putchar('\n');
+		else
+		{
+			printf("0, ");
+		}
 	}
+	print_muliples(0, 9, 1);
+	print_muliples(0, 18, 2);
+	print_muliples(0, 27, 3);
+	print_muliples(0, 36, 4);
+	print_muliples(0, 45, 5);
+	print_muliples(0, 54, 6);
+	print_muliples(0, 63, 7);
+	print_muliples(0, 72, 8);
+	print_muliples(0, 81, 9);
 }
+/**
+ * print_muliples - Prints out the sequence of numbers in 9times table
+ * @start: Beginning of the loop
+ * @end: Final digit of the loop
+ * @step: Number to increment
+ *
+ * Return: Void
+ */
+void print_muliples(int start, int end, int step)
+	{
+		int i;
+
+		for (i = start; i <= end; i += step)
+		{
+			if (i < end)
+			{
+				printf("%d, ", i);
+			}
+			else
+			{
+				printf("%d\n", i);
+			}
+		}
+	}
